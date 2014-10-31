@@ -8,7 +8,7 @@ I like using Sublime Text as a buffer for:
 
 Such notes usually change a lot during a day, and I often need to find a piece of text I had in there.
 
-This little plugin automatically tracks history of such notes. It stores the history in a Git repo.
+This little plugin helps tracking a history of such notes automatically. It stores the history in a Git repo.
 
 
 How it works?
