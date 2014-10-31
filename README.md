@@ -35,7 +35,8 @@ touch Clipboard
 ```
  4. All changes made via Sublime to these files will be committed automatically (nested folders ignored)
 
-## How it works?
+How it works?
+=============
 
 Commit happens when you either:
  * save any file from your Git repo manually,
