@@ -17,8 +17,8 @@ How to use?
  1. Create new Git repository for your temporary files
 
   ```
-mkdir ~/Documents/TODOs
-cd ~/Documents/TODOs
+mkdir ~/Documents/Notes
+cd ~/Documents/Notes
 git init
 ```
  2. Add empty file with name `.sublime-text-git-autocommit` to the root folder to activate this plugin
@@ -28,7 +28,12 @@ touch .sublime-text-git-autocommit
 git commit -am "Commit .sublime-text-git-autocommit"
 ```
  3. Create one or more text files at the same folder and make your notes in there
- 4. All changes made via Sublime to files in this folder will be committed automatically (nested folders ignored)
+
+  ```
+touch TODO
+touch Clipboard
+```
+ 4. All changes made via Sublime to these files will be committed automatically (nested folders ignored)
 
 Commit happens when you either:
  * save the file manually,
