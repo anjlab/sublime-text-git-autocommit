@@ -1,5 +1,5 @@
-Why would you auto-commit anything at all?
-==========================================
+Why auto-committing anything at all?
+====================================
 
 I like using Sublime Text to edit "temporary" files.
 
