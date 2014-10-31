@@ -11,6 +11,17 @@ Such notes usually change a lot during a day, and I often need to find a piece o
 This little plugin automatically tracks history of such notes. It stores the history in a Git repo.
 
 
+How it works?
+=============
+
+Commit happens when you either:
+ * save any file from your Git repo manually,
+ * or with a 30 seconds delay when you made any change to the files.
+
+Every changed file added & committed separately with commit message like:
+> Auto-committing 'TODO.txt'
+
+
 How to use?
 ===========
 
@@ -34,16 +45,6 @@ touch TODO
 touch Clipboard
 ```
  4. All changes made via Sublime to these files will be committed automatically (nested folders ignored)
-
-How it works?
-=============
-
-Commit happens when you either:
- * save any file from your Git repo manually,
- * or with a 30 seconds delay when you made any change to the files.
-
-Every changed file added & committed separately with commit message like:
-> Auto-committing 'TODO.txt'
 
 How to view history?
 ====================
