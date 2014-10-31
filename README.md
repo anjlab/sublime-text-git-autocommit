@@ -14,9 +14,12 @@ This little plugin helps tracking a history of such notes automatically. It stor
 How it works?
 =============
 
-Commit happens when you either:
- * save any file from your Git repo manually,
- * or with a 30 seconds delay when you made any change to the files.
+You create new Git repo for your notes with an empty file `.sublime-text-git-autocommit`.
+This way plugin knows that it should enable auto-commits for files in this repo.
+
+Changes committed when you used Sublime to either:
+ * save any file in your Git repo,
+ * or with a 30 seconds delay after you made any changes to the files.
 
 Every changed file added & committed separately with commit message like:
 > Auto-committing 'TODO.txt'
