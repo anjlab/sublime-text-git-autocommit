@@ -9,7 +9,9 @@ For example:
  * a text buffer to paste/edit/replace content from clipboard
  * etc.
 
-Such files usually change a lot during a day, but it's often happen that I need to find a piece of text I had in there some time ago.
+Such files usually change a lot during a day.
+
+And it's often happen that I need to find a piece of text I had in there some time ago.
 
 So I decided to create this little Sublime plugin that would automatically track history for such changes.
 
