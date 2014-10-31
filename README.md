@@ -89,6 +89,11 @@ It's recommended that you install it via [Package Control](https://github.com/ke
 You can also find this plugin in Package Control by the name "GitAutoCommit".
 
 
+License
+=======
+[MIT-License](https://raw.githubusercontent.com/anjlab/sublime-text-git-autocommit/master/LICENSE)
+
+
 How to contribute?
 ==================
 1. Fork it
@@ -96,7 +101,3 @@ How to contribute?
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
 5. Create New Pull Request
-
-License
-=======
-[MIT-License](https://raw.githubusercontent.com/anjlab/sublime-text-git-autocommit/master/LICENSE)
