@@ -1,21 +1,14 @@
 Why auto-committing anything at all?
 ====================================
 
-I like using Sublime Text to edit "temporary" files.
+I like using Sublime Text as a buffer for:
 
-For example:
+ * working with text from clipboard,
+ * or writing random notes in the way only I can understand
 
- * a buffer to paste/edit/replace text content from clipboard
- * a random notes written in the way only I can understand
- * etc.
+Such notes usually change a lot during a day, and I often need to find a piece of text I had in there.
 
-Such files usually change a lot during a day.
-
-And it's often happen that I need to find a piece of text I had in there some time ago.
-
-So I decided to create this little Sublime plugin that would automatically track history for such changes.
-
-And Git seems like reasonable version control tool for that.
+This little plugin automatically tracks history of such notes. It stores the history in a Git repo.
 
 
 How to use?
@@ -34,11 +27,12 @@ git init
 touch .sublime-text-git-autocommit
 git commit -am "Commit .sublime-text-git-autocommit"
 ```
- 3. All changes made via Sublime to files in this folder will be auto-committed (nested folders ignored)
+ 3. Create one or more text files at the same folder and make your notes in there
+ 4. All changes made via Sublime to files in this folder will be committed automatically (nested folders ignored)
 
-Commit happens automatically when you either:
+Commit happens when you either:
  * save the file manually,
- * or after 30 seconds delay since your latest change to the file.
+ * or with a 30 seconds delay when you made any change to the files.
 
 Every changed file added & committed separately with commit message like:
 > Auto-committing 'TODO.txt'
