@@ -17,9 +17,9 @@ How it works?
 You create new Git repo for your notes with an empty file `.sublime-text-git-autocommit`.
 This way plugin knows that it should enable auto-commits for files in this repo.
 
-Changes committed when you used Sublime to either:
- * save any file in your Git repo,
- * or with a 30 seconds delay after you made any changes to the files.
+Changes committed when you either:
+ * saved a file in your Git repo,
+ * or after you made changes to the files (in a 30 seconds delay).
 
 Every changed file added & committed separately with commit message like:
 > Auto-committing 'TODO.txt'
@@ -41,13 +41,14 @@ git init
 touch .sublime-text-git-autocommit
 git commit -am "Commit .sublime-text-git-autocommit"
 ```
- 3. Create one or more text files at the same folder and make your notes in there
+ 3. Create one or more text files at the same folder and make your notes in them
 
   ```
 touch TODO
 touch Clipboard
 ```
  4. All changes made via Sublime to these files will be committed automatically (nested folders ignored)
+
 
 How to view history?
 ====================
