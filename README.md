@@ -5,13 +5,13 @@ Installation
  1. Install `Git` plugin (required)
 
   ```
-Shift + CMD + P -> Install Package -> Git
+Shift+CMD+P -> Install Package -> Git
 ```
 
  2. Install `GitAutoCommit`
 
   ```
-Shift + CMD + P -> Install Package -> GitAutoCommit
+Shift+CMD+P -> Install Package -> GitAutoCommit
 ```
 
 Why auto-committing anything at all?
