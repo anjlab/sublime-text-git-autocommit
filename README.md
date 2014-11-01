@@ -1,3 +1,19 @@
+Installation
+============
+
+ 0. [Install Package Control](https://packagecontrol.io/installation) if you don't have it yet
+ 1. Install `Git` plugin (required)
+
+  ```
+Shift + CMD + P -> Install Package -> Git
+```
+
+ 2. Install `GitAutoCommit`
+
+  ```
+Shift + CMD + P -> Install Package -> GitAutoCommit
+```
+
 Why auto-committing anything at all?
 ====================================
 
@@ -75,23 +91,16 @@ git pull
 
 ## GitHub 2FA
 If you enabled GitHub's 2-Factor Authentication then you need to use access token to push to your Gist repo from command line.
+
 I found [Gist Tool](https://github.com/defunkt/gist) helpful for this purpose.
-```
+
+  ```
 brew install gist
 gist --login
 cat ~/.gist
 ```
+
 Once you have your access token use it as a username when GitHub asks for credentials, leave password empty.
-
-
-Installation
-============
-
-This plugin depends on this beautiful [Git Sublime Text Plugin](https://github.com/kemayo/sublime-text-git), so you should install it first.
-
-It's recommended that you install it via [Package Control](https://github.com/kemayo/sublime-text-git#package-control).
-
-You can also find this plugin in Package Control by the name "GitAutoCommit".
 
 
 License
