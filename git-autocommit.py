@@ -9,20 +9,19 @@ import sublime_plugin
 import Git.git
 import Git.add
 
-def AutoCommitFileExists(root, parent = ""):
+def is_auto_commit_file_exists(root, parent = ""):
 	if root == parent:
 		return False
 	marker_file = root + "/.sublime-text-git-autocommit"
-	print marker_file
 	if not os.path.exists(marker_file):
-		return AutoCommitFileExists(os.path.dirname(root), root)
+		return is_auto_commit_file_exists(os.path.dirname(root), root)
 	else:
 		return True
 	
 def is_file_from_autocommit_list(view):
 	# Right now all files from folder with special "marker"-file considered to be auto-committed
 	# TODO: Maybe put a list of auto-committed files to the "marker"-file? One filename per line
-	return AutoCommitFileExists(os.path.realpath(os.path.dirname(view.file_name())))
+	return is_auto_commit_file_exists(os.path.realpath(os.path.dirname(view.file_name())))
 
 '''
 Inspired by:
