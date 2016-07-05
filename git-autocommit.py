@@ -6,8 +6,7 @@ from threading import Timer
 import sublime
 import sublime_plugin
 
-import Git.git
-import Git.add
+import Git.git_commands
 
 def is_auto_commit_file_exists(root, parent = ""):
 	if root == parent:
